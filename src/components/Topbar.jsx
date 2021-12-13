@@ -5,7 +5,7 @@ import nikhil2 from "../assets/nikhil2.jpg";
 const Top = styled.div`
   width: 100%;
   height: 50px;
-  position: static;
+  position: sticky;
   top: 0;
   z-index: 999;
 `;
