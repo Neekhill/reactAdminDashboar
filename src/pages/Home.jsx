@@ -1,11 +1,16 @@
-import React from "react";
 import styled from "styled-components";
-import Chart from "../components/Chart";
+import Chart from "../components/Chart.jsx";
 import FeaturedInfo from "../components/FeaturedInfo";
+
+import WidgetSm from "../components/WidgetSm";
 import { userData } from "../dummyData";
 
 const Container = styled.div`
   flex: 4;
+`;
+const HomeWidgets = styled.div`
+  display: flex;
+  margin: 20px;
 `;
 const Home = () => {
   return (
@@ -17,6 +22,9 @@ const Home = () => {
         title="User Analytics"
         grid
       />
+      <HomeWidgets>
+        <WidgetSm />
+      </HomeWidgets>
     </Container>
   );
 };
