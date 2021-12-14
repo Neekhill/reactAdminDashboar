@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Chart from "../components/Chart.jsx";
 import FeaturedInfo from "../components/FeaturedInfo";
-
+import WidgetLg from "../components/WidgetLg.jsx";
 import WidgetSm from "../components/WidgetSm";
 import { userData } from "../dummyData";
 
@@ -24,6 +24,7 @@ const Home = () => {
       />
       <HomeWidgets>
         <WidgetSm />
+        <WidgetLg />
       </HomeWidgets>
     </Container>
   );
