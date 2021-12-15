@@ -7,6 +7,7 @@ import { productData } from "../dummyData";
 const ProductMainContainer = styled.div`
   flex: 4;
   padding: 20px;
+  margin-top: 20px;
 `;
 const ProductTitleContainer = styled.div`
   display: flex;
