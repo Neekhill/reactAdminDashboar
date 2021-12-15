@@ -12,6 +12,7 @@ import {
   WorkOutline,
 } from "@mui/icons-material";
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Sidebar = styled.div`
@@ -61,11 +62,14 @@ const SideBar = () => {
         <SidebarMenu>
           <SidebarTitle>Dashboard</SidebarTitle>
           <SidebarList>
-            <SidebarListItem active="true">
-              <SidebarIcon>
-                <HomeOutlined style={{ marginRight: 5 }} /> Home
-              </SidebarIcon>
-            </SidebarListItem>
+            <Link to="/" className="link">
+              <SidebarListItem active="true">
+                <SidebarIcon>
+                  <HomeOutlined style={{ marginRight: 5 }} /> Home
+                </SidebarIcon>
+              </SidebarListItem>
+            </Link>
+
             <SidebarListItem>
               <SidebarIcon>
                 <AnalyticsOutlined style={{ marginRight: 5 }} /> Analystics
@@ -82,16 +86,21 @@ const SideBar = () => {
         <SidebarMenu>
           <SidebarTitle>Quick Menu</SidebarTitle>
           <SidebarList>
-            <SidebarListItem active="true">
-              <SidebarIcon>
-                <PermIdentity style={{ marginRight: 5 }} /> Users
-              </SidebarIcon>
-            </SidebarListItem>
-            <SidebarListItem>
-              <SidebarIcon>
-                <Storefront style={{ marginRight: 5 }} /> Products
-              </SidebarIcon>
-            </SidebarListItem>
+            <Link to="/users" className="link">
+              <SidebarListItem active="true">
+                <SidebarIcon>
+                  <PermIdentity style={{ marginRight: 5 }} /> Users
+                </SidebarIcon>
+              </SidebarListItem>
+            </Link>
+            <Link to="/products" className="link">
+              <SidebarListItem>
+                <SidebarIcon>
+                  <Storefront style={{ marginRight: 5 }} /> Products
+                </SidebarIcon>
+              </SidebarListItem>
+            </Link>
+
             <SidebarListItem>
               <SidebarIcon>
                 <AttachMoney style={{ marginRight: 5 }} /> Transactions
